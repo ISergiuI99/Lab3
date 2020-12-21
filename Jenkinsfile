@@ -11,7 +11,7 @@ pipeline
         stage("Testing")
         {
             steps{
-                    bat './'
+                    bat 'eShopOnWeb-master/tests/UnitTests/UnitTests.csproj'
             }
         }
         
