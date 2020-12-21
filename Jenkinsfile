@@ -7,13 +7,25 @@ pipeline
     options {
           timestamps()
     }
+
+    stages {
+        
+        stage("Build")
+        {
+            steps{
+                
+                     echo "Sunt aici etapa Build"
+            }
+        }
         
         stage("Testing")
         {
             steps{
-                    bat 'eShopOnWeb-master/tests/UnitTests/Web/Extensions/CacheHelpersTests/GenerateTypesCacheKey.cs'
+                    echo "Sunt aici etapa Test"
             }
         }
         
+        
+    }
 
 }
