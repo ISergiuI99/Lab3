@@ -11,7 +11,7 @@ pipeline
         stage("Testing")
         {
             steps{
-                    bat 'eShopOnWeb-master/tests/UnitTests/UnitTests.csproj'
+                    bat 'eShopOnWeb-master/tests/UnitTests/Web/Extensions/CacheHelpersTests/GenerateTypesCacheKey.cs'
             }
         }
         
