@@ -22,7 +22,6 @@ pipeline
         {
             steps{
                     echo "Sunt aici etapa Test"
-                    bat '.\\mvnw test'
             }
         }
         
