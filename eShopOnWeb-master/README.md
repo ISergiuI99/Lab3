@@ -1,23 +1,8 @@
-[![Build Status](https://github.com/dotnet-architecture/eShopOnWeb/workflows/eShopOnWeb%20Build%20and%20Test/badge.svg)](https://github.com/dotnet-architecture/eShopOnWeb/actions)
+
 
 # Microsoft eShopOnWeb ASP.NET Core Reference Application
 
 Sample ASP.NET Core reference application, powered by Microsoft, demonstrating a single-process (monolithic) application architecture and deployment model. If you're new to .NET development, read the [Getting Started for Beginners](https://github.com/dotnet-architecture/eShopOnWeb/wiki/Getting-Started-for-Beginners) guide.
-
-A list of Frequently Asked Questions about this repository can be found [here](https://github.com/dotnet-architecture/eShopOnWeb/wiki/Frequently-Asked-Questions).
-
-## Overview Video
-
-[Steve "ardalis" Smith](https://twitter.com/ardalis) recorded [a live stream providing an overview of the eShopOnWeb reference app](https://www.youtube.com/watch?v=vRZ8ucGac8M&ab_channel=Ardalis) in October 2020. 
-
-## eBook
-
-This reference application is meant to support the free .PDF download ebook: [Architecting Modern Web Applications with ASP.NET Core and Azure](https://aka.ms/webappebook), updated to **ASP.NET Core 5.0**. [Also available in ePub/mobi formats](https://dotnet.microsoft.com/learn/web/aspnet-architecture).
-
-You can also read the book in online pages at the .NET docs here: 
-https://docs.microsoft.com/dotnet/architecture/modern-web-apps-azure/
-
-[<img src="https://user-images.githubusercontent.com/782127/74948402-48512c80-53ca-11ea-948a-58d037440888.png" height="300" />](https://dotnet.microsoft.com/learn/web/aspnet-architecture)
 
 The **eShopOnWeb** sample is related to the [eShopOnContainers](https://github.com/dotnet/eShopOnContainers) sample application which, in that case, focuses on a microservices/containers-based application architecture. However, **eShopOnWeb** is much simpler in regards to its current functionality and focuses on traditional Web Application Development with a single deployment.
 
@@ -41,13 +26,6 @@ The goal for this sample is to demonstrate some of the principles and patterns d
 - Development Process for Azure-Hosted ASP.NET Core Apps
 - Azure Hosting Recommendations for ASP.NET Core Web Apps
 
-## Running the sample
-
-After cloning or downloading the sample you should be able to run it using an In Memory database immediately. The store's home page should look like this:
-
-![eShopOnWeb home page screenshot](https://user-images.githubusercontent.com/782127/88414268-92d83a00-cdaa-11ea-9b4c-db67d95be039.png)
-
-Most of the site's functionality works with just the web application running. However, the site's Admin page relies on Blazor WebAssembly running in the browser, and it must communicate with the server using the site's PublicApi web application. You'll need to also run this project. You can configure Visual Studio to start multiple projects, or just go to the PublicApi folder in a terminal window and run `dotnet run` from there. Note that if you use this approach, you'll need to stop the application manually in order to build the solution (otherwise you'll get file locking errors).
 
 If you wish to use the sample with a persistent database, you will need to run its Entity Framework Core migrations before you will be able to run the app, and update the `ConfigureServices` method in `Startup.cs` (see below).
 
@@ -115,5 +93,3 @@ You can also run the applications by using the instructions located in their `Do
 
 ## Community Extensions
 We have some great contributions from the community, and while these aren't maintained by Microsoft we still want to highlight them.
-
-[eShopOnWeb VB.NET](https://github.com/VBAndCs/eShopOnWeb_VB.NET) by Mohammad Hamdy Ghanem
